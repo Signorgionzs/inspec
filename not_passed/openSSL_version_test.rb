@@ -7,9 +7,9 @@ control 'openssl-1.0' do
  
 
 
-describe command('openssl version') do
-   its('stdout') { should_not match (/OpenSSL 1.0.1[a-f]/) }
-its('stdout') { should_not match(/OpenSSL 1.0.2-beta*/) }
+describe command('echo "QUIT"|openssl s_client -connect 127.0.0.1 2>&1|grep \'server extension "heartbeat" (id=15)\' || echo safe') do
+   its('stdout') { should match (/safe/) }
+
 
 
 end
