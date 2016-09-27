@@ -1,5 +1,5 @@
 control 'Jars should exist' do
-  impact 0.7
+  impact 0
   title 'Jars should exist'
   desc 'Download jars must exist to continue'
   tag 'gordon'
