@@ -1,5 +1,5 @@
 control 'telnetspec-1.0' do
-  impact 0.7
+  impact 8
   title 'funzionamento telnet'
   desc 'An optional description...'
   tag 'gordon'
