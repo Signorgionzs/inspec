@@ -1,5 +1,5 @@
 control 'port-1.0' do
-  impact 0.7
+  impact 0
   title 'test of ports'
   desc 'An optional description...'
   tag 'gordon'
